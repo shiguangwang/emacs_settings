@@ -27,12 +27,6 @@
 
 (require 'package)
 
-;; FB Internet Proxy
-(setq url-proxy-services
-      '(("no_proxy" . "fbcdn\\.net")
-        ("http" . "fwdproxy.any.facebook.com:8080")
-        ("https" . "fwdproxy.any.facebook.com:8080")))
-
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (when (< emacs-major-version 24)

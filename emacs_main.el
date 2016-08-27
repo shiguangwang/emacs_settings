@@ -1,3 +1,7 @@
+;;;
+;;; Uncomment if on devserver
+;;;
+; (require 'setup-at-fb)
 
 ;;;
 ;;; Add the path ~/.emacs.d/elisp to loadpath
@@ -28,7 +32,6 @@
 ;;;
 ;;; Customized Settings
 ;;;
-(require 'setup-at-fb)
 (require 'setup-copy-word-line)
 (require 'setup-helm)
 (require 'setup-helm-gtags)

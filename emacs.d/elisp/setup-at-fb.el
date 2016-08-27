@@ -40,5 +40,12 @@
 ;; (visit-tags-table "~/fbcode/TAGS")
 ;; (let (large-file-warning-threshold 'nil) (visit-tags-table "~/fbcode/TAGS"))
 
+;; FB Internet Proxy
+(setq url-proxy-services
+      '(("no_proxy" . "fbcdn\\.net")
+        ("http" . "fwdproxy.any.facebook.com:8080")
+        ("https" . "fwdproxy.any.facebook.com:8080")))
+
+
 (provide 'setup-at-fb)
 ;;; setup-at-fb.el ends here
