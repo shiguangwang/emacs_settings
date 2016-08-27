@@ -1,0 +1,21 @@
+
+;; ----- smex-history -----
+(
+ comment-region
+ comment-box
+ helm-M-x
+ customize
+ customize-set-variable
+ cd
+ gg
+)
+
+;; ----- smex-data -----
+(
+ (customize-set-variable . 1)
+ (customize . 1)
+ (helm-M-x . 1)
+ (comment-box . 1)
+ (org-toggle-comment . 1)
+ (comment-region . 2)
+)

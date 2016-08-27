@@ -1,0 +1,26 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/sgwang/" . "instagram-deploy/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+
+)
+
+;; ----- ido-work-file-list -----
+(
+
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/sgwang/" (22425 58182 531968 0) "software/" ".snapshot/" ".emacs~" ".gnupg/" "node_modules/" "ycm_temp/" ".node_repl_history" ".curlrc" ".tmux.conf" ".bash/" "ycm_build/" ".zshrc" ".emacs.d/" ".vimrc" ".serfcli2" ".rootcanal.cert.fp" ".rnd" ".npmrc" ".loginouthistory" ".ig_profile" ".hphpd.ini" ".hphpd.history" ".hgrc" ".gtkrc" ".gitconfig" ".viminfo" "fbcode/" ".oracle_jre_usage/" ".emacs" ".bashrc" ".bash_profile" ".bash_logout" ".bash_history" ".arcrc" ".fixmyserver-homedir-write-test" "bin/" ".vim/" ".subversion/" ".ssh/" ".pki/" ".npm/" ".m2/" ".cache/" "www/" "logs/" "local/" "instagram-vxcode/" "instagram-telegraph/" "instagram-server/" "instagram-kitchen/" "instagram-django/" "instagram-deploy/" ".config/" "../" "./")
+
+ ("/home/sgwang/instagram-deploy/" (22423 45040 132044 932000) "neti/" ".git/" "fabfile.py" ".arcconfig" "push/" "pip-requirements.txt" "bin/" "./" "aws/" "postgres/" ".gitignore" "graphite/" "fabfile.pyc" "util/" "../" "fablib/" "tao/" "django/" "nginx/" "deploy/" "fix_netrc.sh" "upstreams/" "haproxy/" "arclib/" "fbsocks/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+unlink ~/.emacs
+unlink ~/.emacs.d

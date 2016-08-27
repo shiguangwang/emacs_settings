@@ -1,0 +1,33 @@
+#!/bin/bash
+
+EMACS_MAIN=$HOME/.emacs
+EMACS_DIR=$HOME/.emacs.d
+
+exists_emacs_setting=false
+
+if [ -f $EMACS_MAIN ]
+then
+    echo "$EMACS_MAIN exists, backing up..."
+    exists_emacs_setting=true
+fi
+
+if [ -d $EMACS_DIR ]
+then
+    echo "$EMACS_DIR exists, backing up..."
+    exists_emacs_setting=true
+fi
+
+if [ "$exists_emacs_setting" = true ]
+then
+    timestr=`date +%s`
+    mv $EMACS_MAIN "$HOME/.emacs_backup_$timestr"
+    mv $EMACS_DIR "$HOME/.emacs.d_backup_$timestr"
+    echo "Backing up finished."
+fi
+
+
+
+ln -s $PWD/emacs.d $EMACS_DIR
+ln -s $PWD/emacs_main.el $EMACS_MAIN
+
+emacs --batch --eval '(byte-recompile-directory "emacs.d" nil (quote force))'
