@@ -1,14 +1,8 @@
 ;;;
-;;; Uncomment if on devserver
-;;;
-; (require 'setup-at-fb)
-
-;;;
 ;;; Add the path ~/.emacs.d/elisp to loadpath
 ;;;
 (let ((plugin-base "~/.emacs.d/elisp"))
   (add-to-list 'load-path plugin-base))
-
 
 ;;;
 ;;; Install Packages and Set Loadpath
@@ -39,6 +33,10 @@
 (require 'setup-hideshow)
 (require 'setup-irony)
 (require 'setup-misc)
+;; FB
+(if (string-match  (rx-to-string `(: ,"facebook.com" eos) t)
+		   system-name)
+    (require 'setup-at-fb))
 
 ;;;
 ;;; Customized Keymap

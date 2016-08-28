@@ -1,8 +1,12 @@
 # Compiled
 *.elc
+*.eld
 
 # Packaging
 .cask
 
 # Generated
 *.dat
+
+# Stateful
+/emacs.d/recentf

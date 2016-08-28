@@ -46,6 +46,6 @@
         ("http" . "fwdproxy.any.facebook.com:8080")
         ("https" . "fwdproxy.any.facebook.com:8080")))
 
-
+(message "Setup FB dev done!")
 (provide 'setup-at-fb)
 ;;; setup-at-fb.el ends here
