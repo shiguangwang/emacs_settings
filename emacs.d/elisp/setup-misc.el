@@ -27,9 +27,9 @@
 ;;;
 ;;; Add fringe to emacs in terminal
 ;;;
-(add-hook 'window-configuration-change-hook
-          (lambda ()
-            (set-window-margins (car (get-buffer-window-list (current-buffer) nil t))2 2)))
+;; (add-hook 'window-configuration-change-hook
+;;           (lambda ()
+;;             (set-window-margins (car (get-buffer-window-list (current-buffer) nil t))2 2)))
 
 ;;;
 ;;; Enable mouse clicks in terminal
@@ -148,7 +148,7 @@
 ;;;
 ;;; highlight indentation
 ;;;
-(add-hook 'prog-mode-hook 'highlight-indentation-mode)
+;; (add-hook 'prog-mode-hook 'highlight-indentation-mode)
 
 
 (provide 'setup-misc)
