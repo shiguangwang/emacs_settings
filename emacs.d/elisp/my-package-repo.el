@@ -49,6 +49,7 @@
                       company-irony    ;; irony plugin for company
                       dash
                       dumb-jump
+                      evil
                       grep
                       helm
                       helm-ag
