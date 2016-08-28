@@ -25,12 +25,6 @@
 ;;; Code:
 
 ;;;
-;;; define the command prefix C-z
-;;;
-(define-prefix-command 'ctl-z-map)
-(global-set-key (kbd "C-z") 'ctl-z-map)
-
-;;;
 ;;; set regexp incremental search
 ;;;
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
@@ -42,43 +36,29 @@
 ;;; Toggle comment
 ;;;
 (global-set-key (kbd "<f8>") 'comment-or-uncomment-region)
-(global-set-key (kbd "C-z b") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c b") 'comment-or-uncomment-region)
 
 ;;;
 ;;; Toggle Hide/Show
 ;;;
-(global-set-key (kbd "<f7>") 'hs-toggle-hiding)
-(global-set-key (kbd "C-z h") 'hs-toggle-hiding)
+(global-set-key (kbd "C-c C-c") 'hs-toggle-hiding)
 (global-set-key (kbd "C-\\") 'toggle-selective-display)
-
-;;;
-;;; buffer freely moves
-;;;
-(global-set-key (kbd "C-z i") 'buf-move-up)
-(global-set-key (kbd "C-z k") 'buf-move-down)
-(global-set-key (kbd "C-z j") 'buf-move-left)
-(global-set-key (kbd "C-z l") 'buf-move-right)
-
-;;;
-;;; linum
-;;;
-(global-set-key (kbd "C-z ;") 'linum-mode)
 
 ;;;
 ;;; embedded speedbar to the left
 ;;;
-(global-set-key (kbd "C-z c") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-c z") 'sr-speedbar-toggle)
 
 ;;;
 ;;; goto line command
 ;;;
-(global-set-key (kbd "C-z g") 'goto-line)
+(global-set-key (kbd "C-c g") 'goto-line)
 
 ;;;
 ;;; shell invokation
 ;;;
-(global-set-key (kbd "C-z C-s") 'shell)
-(global-set-key (kbd "C-z s") 'eshell)
+(global-set-key (kbd "C-c C-e") 'shell)
+(global-set-key (kbd "C-c e") 'eshell)
 
 ;;;
 ;;; Add another quick auto expand shortcut -- works in windows system

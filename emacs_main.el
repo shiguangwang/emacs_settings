@@ -29,6 +29,7 @@
 ;;;
 (require 'auto-complete-config)
 (require 'buffer-move)
+(require 'evil)
 (require 'grep)
 (require 'highlight-indentation)
 (require 'linum)
@@ -37,7 +38,7 @@
 (require 'sr-speedbar)
 (require 'undo-tree)
 (require 'yasnippet)
-
+(evil-mode 1)
 ;;;
 ;;; Customized Settings
 ;;;
