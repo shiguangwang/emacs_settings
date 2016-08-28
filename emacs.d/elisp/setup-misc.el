@@ -53,16 +53,6 @@
 (add-hook 'after-make-frame-functions 'my-terminal-mouse)
 
 ;;;
-;;; dealing with the backup files
-;;;
-(setq backup-directory-alist `(("." . "~/emacs_backup")))
-(setq backup-copying-when-linked t)
-(setq delete-old-versions t
-  kept-new-versions 6
-  kept-old-versions 2
-  version-control t)
-
-;;;
 ;;; show column number
 ;;;
 (column-number-mode t)
