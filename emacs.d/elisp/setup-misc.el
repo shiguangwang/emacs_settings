@@ -51,6 +51,23 @@
 ;; (for new terminals via emacsclient).
 (my-terminal-mouse)
 (add-hook 'after-make-frame-functions 'my-terminal-mouse)
+;; Stop pasting at the mouse click point
+(setq mouse-yank-at-point t)
+
+;;;
+;;; package bundled with Emacs
+;;;
+;; recentf
+(setq recentf-save-file "~/.emacs.d/etc/recentf"
+      recentf-max-saved-items 100)
+;; savehist
+(setq savehist-file "~/.emacs.d/etc/savehist"
+      history-length 150)
+;; save-place
+(setq-default save-place t)
+(setq save-place-file "~/.emacs.d/etc/saveplace")
+;; bookmark
+(setq bookmark-default-file "~/.emacs.d/etc/bookmarks")
 
 ;;;
 ;;; show column number
@@ -66,6 +83,11 @@
 ;;; disable the tool bar
 ;;;
 (tool-bar-mode -1)
+
+;;;
+;;; disable menu bar mode
+;;;
+(menu-bar-mode -1)
 
 ;;;
 ;;; hippie expand settings
@@ -139,7 +161,6 @@
 ;;; highlight indentation
 ;;;
 ;; (add-hook 'prog-mode-hook 'highlight-indentation-mode)
-
 
 (provide 'setup-misc)
 ;;; setup-misc.el ends here

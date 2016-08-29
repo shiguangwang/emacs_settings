@@ -33,6 +33,12 @@
 (global-set-key (kbd "C-S-r") 'isearch-backward)
 
 ;;;
+;;; remap C-h and M-h
+;;;
+(global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "M-h") 'backward-kill-word)
+
+;;;
 ;;; Toggle comment
 ;;;
 (global-set-key (kbd "<f8>") 'comment-or-uncomment-region)

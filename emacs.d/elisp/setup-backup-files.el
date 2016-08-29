@@ -34,14 +34,14 @@
       )
 
 ;; Default and per-save backups go here.
-(setq backup-directory-alist `(("." . "~/.emacs_backup/per-save")))
+(setq backup-directory-alist `(("." . "~/.emacs.d/etc/backup/per-save")))
 
 (defun force-backup-of-buffer ()
   ;; Make a special "per session" backup at the first save of each
   ;; emacs session.
   (when (not buffer-backed-up)
     ;; Override the default parameters for per-session backups.
-    (let ((backup-directory-alist '(("" . "~/.emacs_backup/per-session")))
+    (let ((backup-directory-alist '(("" . "~/.emacs.d/etc/backup/per-session")))
           (kept-new-versions 3))
       (backup-buffer)))
   ;; Make a "per save" buckup on each save. The first save results in
@@ -51,6 +51,9 @@
     (buckup-buffer)))
 
 (add-hook 'before-save-hook 'force-backup-of-buffer)
+
+(setq auto-save-list-file-prefix "~/.emacs.d/etc/backup/autosave/")
+(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/etc/backup/autosave/" t)))
 
 (provide 'setup-backup-files)
 ;;; setup-backup-files.el ends here

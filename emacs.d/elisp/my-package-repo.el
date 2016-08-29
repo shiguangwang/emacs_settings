@@ -66,6 +66,8 @@
                       irony-eldoc      ;; doc strings plugin for irony
                       json
                       paredit
+                      powerline
+                      powerline-evil
                       projectile
                       rainbow-delimiters
                       smex
