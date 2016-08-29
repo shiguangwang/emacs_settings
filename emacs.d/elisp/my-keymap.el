@@ -41,13 +41,13 @@
 ;;;
 ;;; Toggle Hide/Show
 ;;;
-(global-set-key (kbd "C-c C-c") 'hs-toggle-hiding)
-(global-set-key (kbd "C-\\") 'toggle-selective-display)
+(global-set-key (kbd "C-\\") 'hs-toggle-hiding)
+(global-set-key (kbd "C-c C-\\") 'toggle-selective-display)
 
 ;;;
 ;;; embedded speedbar to the left
 ;;;
-(global-set-key (kbd "C-c z") 'sr-speedbar-toggle)
+(global-set-key (kbd "<f5>") 'sr-speedbar-toggle)
 
 ;;;
 ;;; goto line command
