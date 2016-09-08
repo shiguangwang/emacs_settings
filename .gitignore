@@ -14,4 +14,7 @@
 /emacs.d/etc
 /emacs.d/irony
 /emacs.d/auto-save-list
-/emacs.d/elpa/archives/melpa/archive-contents
+/emacs.d/elpa/archives
+/emacs.d/elpa/archives
+/emacs.d/projectile.cache
+/emacs.d/server

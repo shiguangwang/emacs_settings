@@ -95,6 +95,14 @@ The initial state for a mode can be set with
 (define-key evil-insert-state-map (kbd "C-e") 'end-of-line)
 (define-key evil-insert-state-map (kbd "C-n") 'next-line)
 (define-key evil-insert-state-map (kbd "C-p") 'previous-line)
+(define-key evil-insert-state-map (kbd "C-k") 'kill-line)
+
+(define-key evil-normal-state-map (kbd "C-a") 'beginning-of-line)
+(define-key evil-normal-state-map (kbd "C-e") 'end-of-line)
+(define-key evil-normal-state-map (kbd "C-n") 'next-line)
+(define-key evil-normal-state-map (kbd "C-p") 'previous-line)
+(define-key evil-normal-state-map (kbd "C-k") 'kill-line)
+
 
 (evil-mode 1)
 
